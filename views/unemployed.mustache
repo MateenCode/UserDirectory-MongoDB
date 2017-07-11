@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="users">
+      <a href="http://0.0.0.0:3000/{{id}}">
+        <img src="{{avatar}}" alt="avatar">
+      </a>
+      <a href="http://0.0.0.0:3000/{{id}}">
+      <h1>{{name}}</h1>
+      </a>
+      {{#job}}
+      <a href="http://0.0.0.0:3000/{{id}}">
+        <h2>{{job}}, {{company}}</h2>
+      </a>
+      {{/job}}
+      {{^job}}
+      <a href="http://0.0.0.0:3000/{{id}}">
+        <h3>Available for hire</h3>
+      </a>
+      {{/job}}
+    </div>
+
+  </body>
+</html>
